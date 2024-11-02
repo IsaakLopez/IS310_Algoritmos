@@ -1,2 +1,1 @@
-List = [x for x in range("21 and 2 blackbirds")]
-print(List)
+print([x for x in ("4 and 20 blackbird") if x != " "])
