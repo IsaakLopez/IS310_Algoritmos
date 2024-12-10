@@ -14,10 +14,12 @@ class Arreglo():
         self.__nItems += 1
 
     def pop(self):
-        valor = self.__item[self.__nItems-1]
         self.__item[self.__nItems-1] = None
         self.__nItems -= 1
-        return valor
+    
+    def peek(self):
+        return self.__item[self.__nItems-1]
+
     
     def __str__(self):
         return str(self.__item[:self.__nItems])  
@@ -34,8 +36,15 @@ for j in range(0, size):
 
 
 print("La pila queda asi: ", arr)
-print("Eliminando el primer valor de salida de la pila: ", arr.pop())
+print("El valor en la cima de la pila es: ", arr.peek())
+
+print("Eliminando el primer valor de salida de la pila: ") 
+arr.pop()
+
 print("La pila queda asi: ", arr)
+
 print("Agrego un nuevo valor a la pila: 777") 
 arr.push(777)
+
 print("La pila queda asi: ", arr)
+print("El valor en la cima de la pila es: ", arr.peek())
