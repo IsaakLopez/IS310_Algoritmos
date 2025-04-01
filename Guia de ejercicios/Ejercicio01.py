@@ -1,6 +1,6 @@
 from random import *
 
-class arreglo():
+class arreglo(): #Esta clase guarda el arreglo
     def __init__(self,size):
         self.__maxsize = size
         self.__item = [None] * size
